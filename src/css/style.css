@@ -1,8 +1,7 @@
-:root {
-  --text-color: black;
-  --bg-color: #e5e7eb;
-}
-
+@import url("./utility.css");
+@import url("./avatar.css");
+@import url("./alert.css");
+@import url("./badge.css");
 /* border box */
 html {
   box-sizing: border-box;
@@ -15,7 +14,20 @@ html {
 
 body {
   margin: 0;
-  font: 16px/1.7 "Source Sans Pro", Helvetica, Helvetica Neue, Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  /* font: 16px/1.7 "Source Sans Pro", Helvetica, Helvetica Neue, Arial, sans-serif; */
+  font: 16px/1.7 "Inter", sans-serif;
+  /* color: var(--white-color1); */
+  /* background-color: var(--bg-color); */
+}
+h1 {
+  margin: 0;
+}
+
+.App {
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--black-color1);
+  /* background-color: var(--white-color1); */
+  color: var(--white-color1);
 }
