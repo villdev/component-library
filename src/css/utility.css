@@ -11,6 +11,11 @@
   --black-color3: #040404;
 
   --blue-color1: #1876d2;
+  --blue-color0: #394baf;
+  --blue-color2: #4960e0;
+
+  --yellow-color1: #f9ad1a;
+  --yellow-color2: #ca8e17;
 }
 
 /* ---------------------------------------utitlity classes--------------------------------------- */
@@ -24,6 +29,9 @@
 }
 .bg-blue {
   background-color: var(--blue-color1);
+}
+.bg-blue2 {
+  background-color: var(--blue-color2);
 }
 
 /* text-colors */

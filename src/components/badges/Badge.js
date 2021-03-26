@@ -135,9 +135,9 @@ export default function Badge() {
       </div>
       {/* -------------------badge avatar---------------- */}
       <h3>Badges with avatar</h3>
-      <div className="badge-wrapper avatar avatar--sm mr-4">
+      <div className="badge-wrapper avatar avatar--sm mr-4 bg-white text-black">
         SK
-        <span className="badge badge--sm bg-blue">1</span>
+        <span className="badge badge--sm bg-blue text-white">1</span>
       </div>
       <div className="badge-wrapper avatar mr-4">
         <img src={avatarImg} alt="" />
@@ -146,6 +146,20 @@ export default function Badge() {
       <div className="badge-wrapper avatar avatar--lg">
         <img src={avatarImg} alt="" />
         <span className="badge badge--lg bg-blue">3</span>
+      </div>
+      {/* -------------------badge-dot avatar---------------- */}
+      <h3>Badge-dot with avatar</h3>
+      <div className="badge-wrapper avatar avatar--sm mr-4 bg-white text-black">
+        SK
+        <span className="badge-dot badge-dot--sm bg-blue text-white"></span>
+      </div>
+      <div className="badge-wrapper avatar mr-4">
+        <img src={avatarImg} alt="" />
+        <span className="badge-dot badge-dot--md bg-blue"></span>
+      </div>
+      <div className="badge-wrapper avatar avatar--lg">
+        <img src={avatarImg} alt="" />
+        <span className="badge-dot badge-dot--lg badge--bottom bg-blue"></span>
       </div>
     </div>
   );

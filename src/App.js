@@ -5,6 +5,7 @@ import "./css/style.css";
 import Avatar from "./components/avatar/Avatar";
 import Alert from "./components/alerts/Alert";
 import Badge from "./components/badges/Badge";
+import Button from "./components/buttons/Button";
 
 export default function App() {
   return (
@@ -17,6 +18,9 @@ export default function App() {
       <br />
       <hr />
       <Badge />
+      <br />
+      <hr />
+      <Button />
     </div>
   );
 }
