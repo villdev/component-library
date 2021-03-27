@@ -2,10 +2,11 @@ import React from "react";
 import "./css/style.css";
 
 // import Example from "./components/Example";
-import Avatar from "./components/avatar/Avatar";
-import Alert from "./components/alerts/Alert";
-import Badge from "./components/badges/Badge";
-import Button from "./components/buttons/Button";
+import Avatar from "./components/Avatar";
+import Alert from "./components/Alert";
+import Badge from "./components/Badge";
+import Button from "./components/Button";
+import Card from "./components/Card";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
       <br />
       <hr />
       <Button />
+      <br />
+      <hr />
+      <Card />
     </div>
   );
 }

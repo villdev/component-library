@@ -2,7 +2,7 @@
   /* font-size: 0.875rem; */
   font-size: 1rem;
   /* font-size: 1.3rem; */
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.75;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -40,7 +40,7 @@
 }
 .btn:active {
   transform: scale(0.99);
-  box-shadow: 5px 5px -3px rgba(0, 0, 0, 0.2),
+  box-shadow: 5px 5px -3px 4px rgba(0, 0, 0, 0.2),
     0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 .btn--sm {
@@ -218,6 +218,10 @@
   min-width: 64px;
   box-shadow: none;
 }
+.btn.btn--link:hover {
+  filter: brightness(0.9);
+  background-color: rgba(128, 128, 128, 0.14);
+}
 /* .btn--link.btn--default {
   color: var(--white-color1);
 }
@@ -284,14 +288,18 @@
   fill: #e0e0e0;
 }
 .btn.btn--icon:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(128, 128, 128, 0.25);
 }
 .btn.btn--icon-circle:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(128, 128, 128, 0.25);
 }
 .btn.btn--icon-rounded:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(128, 128, 128, 0.25);
 }
+
 .btn.btn--disabled {
   /* opacity: 0.6; */
   filter: grayscale(0.6);
