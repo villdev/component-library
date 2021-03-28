@@ -7,6 +7,7 @@ import Alert from "./components/Alert";
 import Badge from "./components/Badge";
 import Button from "./components/Button";
 import Card from "./components/Card";
+import Input from "./components/Input";
 
 export default function App() {
   return (
@@ -25,6 +26,10 @@ export default function App() {
       <br />
       <hr />
       <Card />
+      <br />
+      <hr />
+      <Input />
+      <br />
     </div>
   );
 }

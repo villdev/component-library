@@ -58,7 +58,7 @@ export default function Card() {
       {/* ------------------------------full card structure--------------------------- */}
       <h3>Full Card Structure</h3>
       {/* <div className="card container-xs0 bg-white text-black"> */}
-      <div className="card container-xs0 bg-grey1 text-white">
+      <div className="card container-xs0 bg-grey1 text-white mb-4">
         <div className="card__header">
           <div className="avatar bg-black mr-3">SK</div>
           <div className="card__title">
@@ -132,7 +132,8 @@ export default function Card() {
           </div>
         </div>
       </div>
-      <div className="card container-xs0 bg-white text-black">
+      {/* 2 */}
+      <div className="card container-xs0 bg-white text-black mb-4">
         <div className="card__media">
           <img src={reptileImg} alt="" />
         </div>
@@ -154,9 +155,28 @@ export default function Card() {
           </div>
         </div>
       </div>
+      {/* 3 */}
+      <div className="card container-xs0 bg-white text-black p-2 mb-4">
+        <div className="card__header border-bottom">
+          <div className="card__title">
+            <div className="text-title text-bold">Delete</div>
+          </div>
+        </div>
+        <div className="card__content">
+          <p className="py-4">Are you sure you want to delete this file?</p>
+        </div>
+        <div className="card__footer border-top">
+          <div className="card__actions ml-auto">
+            <button className="btn btn--sm btn--rounded mr-2">No</button>
+            <button className="btn btn--sm btn--rounded btn--danger mr-2">
+              Yes
+            </button>
+          </div>
+        </div>
+      </div>
       {/* -----------------------card with dismiss btn------------------------- */}
       <h3>Card with dismiss button</h3>
-      <div className="card container-xs0 bg-white text-black p-2">
+      <div className="card container-xs0 bg-white text-black p-2 mb-4">
         <div className="card__header">
           <div className="avatar avatar--square bg-black text-white mr-3">
             EF
@@ -190,7 +210,20 @@ export default function Card() {
       </div>
       {/* --------------------------card with overlay------------------- */}
       <h3>Cards with overlay</h3>
-      <div className="card container-xs0 bg-white text-black">
+      {/* card with full overlay */}
+      <div className="card container-xs0 bg-white text-black mb-4">
+        <div className="card__media">
+          <img src={reptileImg} alt="" />
+        </div>
+        <div className="card__overlay text-white flex-col-reverse">
+          <div className="card__title">
+            <div className="text-bold text-title">Lizard</div>
+            <div className="text-subtitle">Squamate Reptiles</div>
+          </div>
+        </div>
+      </div>
+      {/* card with specific overlay on card__medua */}
+      <div className="card container-xs0 bg-white text-black mb-4">
         <div className="card__media">
           <img src={reptileImg} alt="" />
           <div className="card__overlay text-white flex-col-reverse">

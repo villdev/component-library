@@ -4,6 +4,7 @@
 @import url("./badge.css");
 @import url("./button.css");
 @import url("./card.css");
+@import url("./input.css");
 /* border box */
 html {
   box-sizing: border-box;

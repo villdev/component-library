@@ -19,6 +19,7 @@
   --yellow-color2: #ca8e17;
 
   --light-grey1: #424242;
+  --light-grey2: #1c1d1f;
 }
 
 /* ---------------------------------------utitlity classes--------------------------------------- */
@@ -38,6 +39,9 @@
 }
 .bg-grey1 {
   background-color: var(--light-grey1);
+}
+.bg-gre2 {
+  background-color: var(--light-grey2);
 }
 /* text-colors */
 .text-white {
@@ -120,6 +124,12 @@
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .ml-auto {
   margin-left: auto;
 }
@@ -130,9 +140,25 @@
 .pt-4 {
   padding-top: 1rem;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pl-4 {
+  padding-left: 1rem;
+}
+.pl-8 {
+  padding-left: 2rem;
+}
 /* border */
 .border-top {
   border-top: 1px solid rgba(189, 185, 185, 0.589);
+}
+.border-bottom {
+  border-bottom: 1px solid rgba(189, 185, 185, 0.589);
 }
 /* width */
 [class*="w-1/2"] {
