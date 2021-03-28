@@ -8,6 +8,8 @@ import Badge from "./components/Badge";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import Input from "./components/Input";
+import Typography from "./components/Typography";
+import Utility from "./components/Utility";
 
 export default function App() {
   return (
@@ -29,6 +31,12 @@ export default function App() {
       <br />
       <hr />
       <Input />
+      <br />
+      <hr />
+      <Typography />
+      <br />
+      <hr />
+      <Utility />
       <br />
     </div>
   );

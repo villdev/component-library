@@ -211,7 +211,7 @@ export default function Card() {
       {/* --------------------------card with overlay------------------- */}
       <h3>Cards with overlay</h3>
       {/* card with full overlay */}
-      <div className="card container-xs0 bg-white text-black mb-4">
+      <div className="card card--square container-xs0 bg-white text-black mb-4">
         <div className="card__media">
           <img src={reptileImg} alt="" />
         </div>
