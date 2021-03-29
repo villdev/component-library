@@ -215,6 +215,13 @@
   flex-shrink: 0;
 }
 
+/* fill svg */
+.fill-white {
+  fill: var(--white-color1);
+}
+.fill-black {
+  fill: var(--black-color1);
+}
 /* colors bg */
 .bg-black {
   --bg-opacity: 1;

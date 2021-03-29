@@ -112,7 +112,8 @@
   padding: 6px 8px;
 }
 .alert__actions button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(128, 128, 128, 0.2);
 }
 /*!------------------------------------- add active class-------------------------- */
 .alert__actions svg {
@@ -170,7 +171,4 @@
 .alert--success.alert--outline {
   border: 1px solid #4caf50;
   color: #377c3a;
-}
-.alert.alert--light button:hover {
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }

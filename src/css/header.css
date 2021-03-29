@@ -1,0 +1,134 @@
+header {
+  height: var(--header-height);
+  position: relative;
+  border-bottom: 1px solid rgba(209, 213, 219);
+}
+
+.input-toggle .toggle-icon::after {
+  background-color: var(--bg);
+}
+.input-toggle > input:checked + span::after {
+  background-color: var(--bg);
+}
+
+.logo {
+  width: var(--sidebar-width);
+  cursor: pointer;
+}
+.logo__icon {
+  fill: #3e6eff;
+}
+.logo__text {
+  letter-spacing: 1.25px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+}
+.navigation {
+  flex-grow: 1;
+  height: 100%;
+}
+.header-btns {
+  width: var(--sidebar-width);
+}
+.main-nav {
+  height: 100%;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+.main-nav__item {
+  font-weight: 600;
+  font-size: 1.15rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.main-nav__item button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 1.15rem;
+  color: var(--text-color);
+}
+
+.main-nav__item + .main-nav__item {
+  margin-left: 2.75rem;
+}
+.active-main-nav > button {
+  color: var(--primary-color);
+}
+
+.main-nav__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+  /* z-index: -1; */
+  transition: transform 0.3s ease;
+}
+
+.main-nav__item::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.main-nav__item:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active-main-nav::before {
+  transform: scaleX(1);
+}
+.main-nav__item button:focus {
+  /* background-color: rgba(128, 128, 128, 0.2); */
+  /* border-radius: 12px; */
+  /* padding: 12px 0; */
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--primary-color);
+}
+
+.input-text.input-text--light .focus-border {
+  bottom: -55%;
+  background-color: rgba(128, 128, 128, 0.3);
+  height: 3px;
+}
+.input-text.input-text--light input {
+  border-bottom: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  background-image: url("../images/search-gray.svg");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  padding-left: 32px;
+}
+
+.github-btn:focus {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
