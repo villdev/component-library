@@ -140,13 +140,9 @@
 .text-extrabold {
   font-weight: 800;
 }
-.text-black {
+/* .text-black {
   font-weight: 900;
-}
-/* todo change this to above bold after fixed whole app */
-.text-bold {
-  font-weight: bold;
-}
+} */
 
 /* text color */
 .text-transparent {
@@ -543,31 +539,4 @@
 }
 .text-justify {
   text-align: justify;
-}
-
-/*! refactor below */
-/* text-colors */
-.text-white {
-  color: var(--white-color2);
-}
-.text-black {
-  color: var(--black-color2);
-}
-.text-blue {
-  color: var(--blue-color);
-}
-.text-subtitle {
-  font-size: 0.8em;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.009em;
-}
-.text-title {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.334;
-  letter-spacing: 0em;
-}
-.text-para {
-  font-size: 0.875rem;
 }

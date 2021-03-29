@@ -29,19 +29,17 @@ export default function Card() {
             <path d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path>
           </svg>
           <p className="text-bold">Fast. Very fast.</p>
-          <p>Blazing fast speed you can depend on.</p>
+          <p className="text-body1">Blazing fast speed you can depend on.</p>
         </div>
       </div>
 
       <div className="card bg-white text-black container-xs mb-4">
         <div className="card__content">
-          <div className="card__header">
-            <div className="card__title">
-              <div className="text-bold text-title">Title</div>
-              <div className="text-subtitle">Subtitle for card</div>
-            </div>
+          <div className="card__title">
+            <div className="text-bold text-h5">Title</div>
+            <div className="text-subtitle2">Subtitle for card</div>
           </div>
-          <p>
+          <p className="text-body1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
             dolores ad. Assumenda dolorum sunt, fuga velit sequi officia ea
             facere nostrum ad...
@@ -49,7 +47,7 @@ export default function Card() {
         </div>
         <div className="card__footer">
           <div className="card__actions">
-            <button className="btn btn--sm btn--rounded btn--link ml-auto text-bold">
+            <button className="btn btn--sm btn--rounded btn--link ml-auto text-semibold">
               Read More
             </button>
           </div>
@@ -57,13 +55,14 @@ export default function Card() {
       </div>
       {/* ------------------------------full card structure--------------------------- */}
       <h3>Full Card Structure</h3>
-      {/* <div className="card container-xs0 bg-white text-black"> */}
-      <div className="card container-xs0 bg-grey1 text-white mb-4">
+      <div className="card container-card bg-gray-800 text-white mb-4">
         <div className="card__header">
-          <div className="avatar bg-black mr-3">SK</div>
+          <div className="avatar bg-red-500 mr-3">SK</div>
           <div className="card__title">
-            <div className="text-title text-bold">Shrimp and Chorizo</div>
-            <div className="text-subtitle">September 14, 2016</div>
+            <div className="text-gray-50 text-medium">Shrimp and Chorizo</div>
+            <div className="text-subtitle2 text-gray-300">
+              September 14, 2016
+            </div>
           </div>
           <div className="card__actions ml-auto">
             <button className="btn btn--sm btn btn--icon-rounded btn--rounded">
@@ -82,7 +81,7 @@ export default function Card() {
           <img src={foodSampleImg} alt="" />
         </div>
         <div className="card__content">
-          <p className="text-para">
+          <p className="text-subtitle1 text-gray-300 text-light">
             This impressive paella is a perfect party dish and a fun meal to
             cook together with your guests. Add 1 cup of frozen peas along with
             the mussels, if you like.
@@ -133,14 +132,14 @@ export default function Card() {
         </div>
       </div>
       {/* 2 */}
-      <div className="card container-xs0 bg-white text-black mb-4">
+      <div className="card container-card bg-white text-black mb-4">
         <div className="card__media">
           <img src={reptileImg} alt="" />
         </div>
         <div className="card__content">
           <div className="card__title">
-            <div className="text-bold text-title">Lizard</div>
-            <div className="text-para">
+            <div className="text-h6 text-semibold mb-2">Lizard</div>
+            <div className="text-body1 text-light">
               Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica
             </div>
@@ -148,27 +147,33 @@ export default function Card() {
         </div>
         <div className="card__footer">
           <div className="card__actions">
-            <button className="btn btn--sm btn--link text-bold">Share</button>
-            <button className="btn btn--sm btn--link text-bold">
+            <button className="btn btn--sm btn--link text-semibold">
+              Share
+            </button>
+            <button className="btn btn--sm btn--link text-semibold">
               Learn More
             </button>
           </div>
         </div>
       </div>
       {/* 3 */}
-      <div className="card container-xs0 bg-white text-black p-2 mb-4">
+      <div className="card container-card bg-white text-black p-2 mb-4">
         <div className="card__header border-bottom">
           <div className="card__title">
-            <div className="text-title text-bold">Delete</div>
+            <div className="text-h6 text-bold">Delete</div>
           </div>
         </div>
         <div className="card__content">
-          <p className="py-4">Are you sure you want to delete this file?</p>
+          <p className="text-body1  py-2">
+            Are you sure you want to delete this file?
+          </p>
         </div>
         <div className="card__footer border-top">
           <div className="card__actions ml-auto">
-            <button className="btn btn--sm btn--rounded mr-2">No</button>
-            <button className="btn btn--sm btn--rounded btn--danger mr-2">
+            <button className="btn btn--sm btn--rounded btn--default text-button mr-2">
+              No
+            </button>
+            <button className="btn btn--sm btn--rounded btn--danger text-button mr-2">
               Yes
             </button>
           </div>
@@ -176,14 +181,16 @@ export default function Card() {
       </div>
       {/* -----------------------card with dismiss btn------------------------- */}
       <h3>Card with dismiss button</h3>
-      <div className="card container-xs0 bg-white text-black p-2 mb-4">
+      <div className="card container-card bg-white text-black p-2 mb-4">
         <div className="card__header">
           <div className="avatar avatar--square bg-black text-white mr-3">
             EF
           </div>
           <div className="card__title">
-            <div className="text-bold text-title">Elliot Fu</div>
-            <div className="text-subtitle">Friends of Veronika</div>
+            <div className="text-bold">Elliot Fu</div>
+            <div className="text-subtitle2 text-normal">
+              Friends of Veronika
+            </div>
           </div>
           <div className="card__actions ml-auto">
             <button className="btn btn--sm btn--icon-circle btn--rounded">
@@ -199,7 +206,9 @@ export default function Card() {
           </div>
         </div>
         <div className="card__content">
-          Elliot requested permission to view your contact details
+          <p className="text-body1">
+            Elliot requested permission to view your contact details
+          </p>
         </div>
         <div className="card__footer border-top">
           <div className="card__actions ml-auto">
@@ -211,30 +220,30 @@ export default function Card() {
       {/* --------------------------card with overlay------------------- */}
       <h3>Cards with overlay</h3>
       {/* card with full overlay */}
-      <div className="card card--square container-xs0 bg-white text-black mb-4">
+      <div className="card card--square container-card bg-white text-black mb-4">
         <div className="card__media">
           <img src={reptileImg} alt="" />
         </div>
         <div className="card__overlay text-white flex-col-reverse">
           <div className="card__title">
-            <div className="text-bold text-title">Lizard</div>
-            <div className="text-subtitle">Squamate Reptiles</div>
+            <div className="text-bold text-h6">Lizard</div>
+            <div className="text-subtitle2">Squamate Reptiles</div>
           </div>
         </div>
       </div>
       {/* card with specific overlay on card__medua */}
-      <div className="card container-xs0 bg-white text-black mb-4">
+      <div className="card container-card bg-white text-black mb-4">
         <div className="card__media">
           <img src={reptileImg} alt="" />
           <div className="card__overlay text-white flex-col-reverse">
             <div className="card__title">
-              <div className="text-bold text-title">Lizard</div>
-              <div className="text-subtitle">Squamate Reptiles</div>
+              <div className="text-bold text-h6">Lizard</div>
+              <div className="text-subtitle2">Squamate Reptiles</div>
             </div>
           </div>
         </div>
         <div className="card__content">
-          <div className="text-para">
+          <div className="text-body1">
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </div>
@@ -255,26 +264,24 @@ export default function Card() {
           <img src={reptileImg} alt="" />
         </div>
         <div className="card__content w-2/3">
-          <div className="card__header">
-            <div className="card__title">
-              <div className="text-bold text-title">Lizard</div>
-            </div>
+          <div className="card__title">
+            <div className="text-bold text-h4">Lizard</div>
           </div>
-          <div className="text-para">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica. Lorem
-            ipsum dolor sit amet consectetur, adipisicing elit. Ipsa at ad a
-            molestiae autem aliquid odit veritatis magni quisquam.
-          </div>
-          <div className="text-para">
+          <div className="text-body1 mb-2">
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica. Lorem
             ipsum dolor sit amet consectetur, adipisicing elit.
           </div>
+          <div className="text-body1 mb-2">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica.
+          </div>
           <div className="card__footer">
             <div className="card__actions">
-              <button className="btn btn--sm btn--link text-bold">Share</button>
-              <button className="btn btn--sm btn--link text-bold">
+              <button className="btn btn--sm btn--link text-bold text-button">
+                Share
+              </button>
+              <button className="btn btn--sm btn--link text-bold text-button">
                 Learn More
               </button>
             </div>

@@ -73,7 +73,18 @@ export default function Avatar() {
         <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
         </svg>
-        <span className="badge badge--md bg-blue text-white">2</span>
+        <span className="badge badge--md bg-blue-600 text-white">2</span>
+      </div>
+      <div className="avatar badge-wrapper mr-4">
+        <svg
+          className="fill-white"
+          focusable="false"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path>
+        </svg>
+        <span className="badge badge--md bg-blue-600 text-white">2</span>
       </div>
       <div className="avatar badge-wrapper">
         <img src={avatarImg} alt="" />

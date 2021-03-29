@@ -70,37 +70,67 @@
 }
 .btn.btn--danger {
   color: var(--white-color1);
-  background-color: #f44336;
+  /* background-color: #f44336; */
+  background-color: rgba(220, 38, 38); /*600*/
   fill: currentColor;
 }
 .btn.btn--danger:hover {
-  background-color: #be342a;
+  /* background-color: #be342a; */
+  background-color: rgba(185, 28, 28);
 }
 
 .btn.btn--default {
   color: rgba(0, 0, 0, 0.87);
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
+  background-color: rgba(229, 231, 235); /*200*/
   fill: currentColor;
 }
 .btn.btn--default:hover {
-  background-color: #b4b3b3;
+  /* background-color: #b4b3b3; */
+  background-color: rgba(209, 213, 219);
+  /* background-color: rgba(156, 163, 175);  */
 }
 
 .btn.btn--success {
   color: var(--white-color1);
-  background-color: #4caf50;
+  /* background-color: #4caf50; */
+  background-color: rgba(5, 150, 105); /*600*/
   fill: currentColor;
 }
 .btn.btn--success:hover {
-  background-color: #378039;
+  /* background-color: #378039; */
+  background-color: rgba(4, 120, 87);
 }
 .btn.btn--dark {
-  background-color: var(--black-color1);
+  /* background-color: var(--black-color1); */
+  background-color: rgba(31, 41, 55); /*800*/
   color: var(--white-color1);
   fill: currentColor;
 }
 .btn.btn--dark:hover {
-  background-color: var(--black-color2);
+  /* background-color: var(--black-color3); */
+  background-color: rgba(55, 65, 81);
+}
+.btn.btn--blue {
+  /* background-color: var(--blue-color2); */
+  /* background-color: rgba(59, 130, 246); */
+  background-color: rgba(37, 99, 235); /*600*/
+  color: var(--white-color1);
+  fill: currentColor;
+}
+.btn.btn--blue:hover {
+  /* background-color: var(--blue-color0); */
+  background-color: rgba(29, 78, 216);
+}
+.btn.btn--yellow {
+  /* background-color: var(--yellow-color1); */
+  background-color: rgba(245, 158, 11); /*500*/
+  color: var(--white-color1);
+  fill: currentColor;
+}
+.btn.btn--yellow:hover {
+  /* background-color: var(--yellow-color2); */
+  background-color: rgba(217, 119, 6);
 }
 .btn.btn--black {
   background-color: var(--black-color3);
@@ -108,7 +138,8 @@
   fill: currentColor;
 }
 .btn.btn--black:hover {
-  background-color: var(--black-color2);
+  background-color: var(--white-color3);
+  color: var(--black-color3);
 }
 .btn.btn--white {
   background-color: var(--white-color3);
@@ -116,23 +147,8 @@
   fill: currentColor;
 }
 .btn.btn--white:hover {
-  background-color: #e0e0e0;
-}
-.btn.btn--blue {
-  background-color: var(--blue-color2);
-  color: var(--white-color1);
-  fill: currentColor;
-}
-.btn.btn--blue:hover {
-  background-color: var(--blue-color0);
-}
-.btn.btn--yellow {
-  background-color: var(--yellow-color1);
-  color: var(--white-color1);
-  fill: currentColor;
-}
-.btn.btn--yellow:hover {
-  background-color: var(--yellow-color2);
+  background-color: var(--black-color3);
+  color: var(--white-color3);
 }
 
 .btn.btn--no-shadow {
@@ -149,36 +165,69 @@
   /* background-color: rgba(25, 118, 210, 0.08); */
 }
 .btn--outlined.btn--danger {
-  color: #f44336;
-  border: 1px solid #f44336;
+  /* color: #f44336;
+  border: 1px solid #f44336; */
+  color: rgba(220, 38, 38);
+  border: 1px solid rgba(220, 38, 38);
   fill: currentColor;
 }
 .btn--outlined.btn--danger:hover {
-  background-color: rgba(210, 25, 25, 0.06);
+  /* background-color: rgba(210, 25, 25, 0.06); */
+  background-color: rgba(220, 38, 38, 0.1);
 }
 .btn--outlined.btn--default {
-  color: #e0e0e0;
-  border: 1px solid #e0e0e0;
+  /* color: #e0e0e0;
+  border: 1px solid #e0e0e0; */
+  color: rgba(229, 231, 235);
+  border: 1px solid rgba(229, 231, 235);
   fill: currentColor;
 }
 .btn--outlined.btn--default:hover {
-  background-color: rgba(212, 208, 208, 0.06);
+  /* background-color: rgba(212, 208, 208, 0.06); */
+  background-color: rgba(229, 231, 235, 0.1);
 }
 .btn--outlined.btn--success {
-  color: #4caf50;
-  border: 1px solid #4caf50;
+  /* color: #4caf50;
+  border: 1px solid #4caf50; */
+  color: rgba(5, 150, 105);
+  border: 1px solid rgba(5, 150, 105);
   fill: currentColor;
 }
 .btn--outlined.btn--success:hover {
-  background-color: rgba(47, 210, 25, 0.06);
+  /* background-color: rgba(47, 210, 25, 0.06); */
+  background-color: rgba(5, 150, 105, 0.1);
 }
 .btn--outlined.btn--dark {
-  color: var(--black-color1);
-  border: 1px solid var(--black-color1);
+  /* color: var(--black-color1);
+  border: 1px solid var(--black-color1); */
+  color: rgba(31, 41, 55);
+  border: 1px solid rgba(31, 41, 55);
   fill: currentColor;
 }
 .btn--outlined.btn--dark:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(31, 41, 55, 0.1);
+}
+.btn--outlined.btn--blue {
+  /* color: var(--blue-color2);
+  border: 1px solid var(--blue-color2); */
+  color: rgba(37, 99, 235);
+  border: 1px solid rgba(37, 99, 235);
+  fill: currentColor;
+}
+.btn--outlined.btn--blue:hover {
+  /* background-color: rgba(25, 121, 210, 0.06); */
+  background-color: rgba(37, 99, 235, 0.1);
+}
+.btn--outlined.btn--yellow {
+  /* color: var(--yellow-color1);
+  border: 1px solid var(--yellow-color1); */
+  color: rgba(245, 158, 11);
+  border: 1px solid rgba(245, 158, 11);
+  fill: currentColor;
+}
+.btn--outlined.btn--yellow:hover {
+  /* background-color: rgba(210, 182, 25, 0.06); */
+  background-color: rgba(245, 158, 11, 0.1);
 }
 .btn--outlined.btn--black {
   color: var(--black-color3);
@@ -186,7 +235,10 @@
   fill: currentColor;
 }
 .btn--outlined.btn--black:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* color: rgba(209, 213, 219); */
+  color: rgba(156, 163, 175);
+  background-color: var(--black-color3);
 }
 .btn--outlined.btn--white {
   color: var(--white-color3);
@@ -194,23 +246,9 @@
   fill: currentColor;
 }
 .btn--outlined.btn--white:hover {
-  background-color: rgba(255, 255, 255, 0.06);
-}
-.btn--outlined.btn--blue {
-  color: var(--blue-color2);
-  border: 1px solid var(--blue-color2);
-  fill: currentColor;
-}
-.btn--outlined.btn--blue:hover {
-  background-color: rgba(25, 121, 210, 0.06);
-}
-.btn--outlined.btn--yellow {
-  color: var(--yellow-color1);
-  border: 1px solid var(--yellow-color1);
-  fill: currentColor;
-}
-.btn--outlined.btn--yellow:hover {
-  background-color: rgba(210, 182, 25, 0.06);
+  /* background-color: rgba(255, 255, 255, 0.06); */
+  color: var(--black-color3);
+  background-color: var(--white-color3);
 }
 .btn.btn--link {
   background-color: transparent;

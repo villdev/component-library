@@ -29,6 +29,60 @@ export default function Typography() {
       <div className="text-caption mb-4">This is a text caption.</div>
       <h3 className="mb-3">Overline</h3>
       <div className="text-overline mb-4">This is an overline.</div>
+      <h3>Font Weight</h3>
+      <div className="text-thin">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-extralight">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-normal">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-medium">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-semibold">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-bold">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-extrabold">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <div className="text-black">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+        doloribus quidem dignissimos.{" "}
+      </div>
+      <h3>Text Align</h3>
+      <div className="container-xs text-center mb-4">
+        Text center: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Corporis aliquam praesentium temporibus consequuntur incidunt.
+      </div>
+      <div className="container-xs text-left mb-4">
+        Text Left: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Corporis aliquam praesentium temporibus consequuntur incidunt.
+      </div>
+      <div className="container-xs text-right mb-4">
+        Text Right: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Corporis aliquam praesentium temporibus consequuntur incidunt.
+      </div>
+      <div className="container-xs text-justify mb-4">
+        Text Justify: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Corporis aliquam praesentium temporibus consequuntur incidunt.
+      </div>
     </div>
   );
 }
