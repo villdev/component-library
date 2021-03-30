@@ -30,8 +30,8 @@ html {
 .App {
   width: 100%;
   min-height: 100vh;
-  /* background-color: var(--black-color1); */
-  background-color: var(--white-color1);
+  background-color: var(--black-color1);
+  /* background-color: var(--white-color1); */
   color: var(--white-color1);
 }
 
@@ -159,4 +159,8 @@ html {
 }
 .p-12 {
   padding: 3rem;
+}
+
+.border-color-white {
+  border-color: #fff;
 }

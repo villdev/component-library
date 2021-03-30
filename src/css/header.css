@@ -96,13 +96,12 @@ header {
   transform: scaleX(1);
 }
 .main-nav__item button:focus {
-  /* background-color: rgba(128, 128, 128, 0.2); */
-  /* border-radius: 12px; */
-  /* padding: 12px 0; */
-  text-decoration-line: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.main-nav__item button:active .main-nav__item::before {
+  /* background-color: red; */
+  transform-origin: bottom right;
+  transform: scale(0);
 }
 
 .input-text.input-text--light .focus-border {
@@ -122,6 +121,11 @@ header {
   padding-left: 32px;
 }
 
+.github-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .github-btn:focus {
   background-color: rgba(128, 128, 128, 0.3);
 }
