@@ -1,7 +1,7 @@
 .sidebar {
   width: var(--sidebar-width);
   /* padding: 2.5rem 2.5rem; */
-  padding: 2.5rem 2.5rem;
+  padding: 3rem 2.5rem;
   padding-right: 3.5rem;
 }
 .sidebar-header {

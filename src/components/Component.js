@@ -12,6 +12,12 @@ export default function Component({ comp }) {
   const currentVariants =
     currentTheme === "light" ? comp.lightVariants : comp.darkVariants;
   const navVariants = currentVariants.map(({ name }) => name);
+  const handleCopy = (reactCode) => {
+    navigator.clipboard.writeText(
+      // reactElementToJSXString(reactCode).slice(26, -6).trim()
+      reactElementToJSXString(reactCode).slice(26, -6)
+    );
+  };
   const mainContentRef = useRef(null);
   useEffect(() => {
     Prism.highlightAll();
@@ -38,6 +44,7 @@ export default function Component({ comp }) {
         {comp.intro && (
           <div className="component-intro-wrapper">
             <div
+              id="intro"
               className="component-intro-header"
               style={{ color: userTheme[currentTheme].oppositeColor }}
             >
@@ -50,6 +57,7 @@ export default function Component({ comp }) {
         {currentVariants.map((variant, i) => (
           <div className="component-variant-wrapper" key={i}>
             <div
+              id={variant.name.replace(" ", "")}
               className="component-variant-header"
               style={{ color: userTheme[currentTheme].oppositeColor }}
             >
@@ -59,7 +67,10 @@ export default function Component({ comp }) {
             <div className="component-variant-example">
               <div className="component-variant-example__output">
                 {variant.code}
-                <button className="copy-btn btn btn--icon-rounded btn--rounded">
+                <button
+                  onClick={() => handleCopy(variant.code)}
+                  className="copy-btn btn btn--icon-rounded btn--rounded"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon-sm"
@@ -88,7 +99,10 @@ export default function Component({ comp }) {
           </div>
         ))}
       </div>
-      <RightSidebar navVariants={navVariants} />
+      <RightSidebar
+        navVariants={navVariants}
+        introPresent={comp.intro !== ""}
+      />
     </div>
   );
 }

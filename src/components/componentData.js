@@ -1520,7 +1520,7 @@ export const componentData = {
         ),
         code: (
           <div className="comp__eg">
-            <div className="card bg-black text-white container-xs">
+            <div className="card bg-gray-700 text-gray-300 container-xs">
               <div className="card__content">
                 <div className="card__title">
                   <div className="text-bold text-h5">Title</div>
@@ -1651,7 +1651,7 @@ export const componentData = {
         ),
         code: (
           <div className="comp__eg">
-            <div className="card container-card bg-black text-white p-2">
+            <div className="card container-card bg-gray-800 text-gray-300 p-2">
               <div className="card__header">
                 <div className="avatar avatar--square bg-white text-black mr-3">
                   EF
@@ -1708,7 +1708,7 @@ export const componentData = {
         ),
         code: (
           <div className="comp__eg">
-            <div className="card card--square container-card bg-white text-black">
+            <div className="card card--square container-card bg-white text-gray-300">
               <div className="card__media">
                 <img src={reptileImg} alt="" />
               </div>
@@ -1733,7 +1733,7 @@ export const componentData = {
         ),
         code: (
           <div className="comp__">
-            <div className="card card--horizontal container--sm bg-black text-white">
+            <div className="card card--horizontal container--sm bg-gray-800 text-gray-300">
               <div className="card__media w-1/3">
                 <img src={reptileImg} alt="" />
               </div>

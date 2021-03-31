@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   left: calc(100%- var(--sidebar-width));
-  padding: 2.5rem 2.5rem;
+  padding: 3rem 2.5rem;
   /* padding-left: 3.5rem; */
 }
 .right-sidebar-header {
@@ -32,6 +32,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-.right-sidebar-nav__item:hover {
+.right-sidebar-nav__item a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+.right-sidebar-nav__item a:hover {
+  color: var(--primary-color);
+}
+.right-sidebar-nav__item a:focus {
   color: var(--primary-color);
 }
