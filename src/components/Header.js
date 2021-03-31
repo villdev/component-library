@@ -70,7 +70,7 @@ export default function Header() {
         </label>
         <button className="btn btn--icon-circle btn--sm github-btn">
           <a
-            href="https://github.com/villdev/monochrome"
+            href="https://github.com/villdev/pars"
             target="_blank"
             rel="noreferrer"
           >

@@ -18,6 +18,7 @@ export default function ComponentsRoute() {
         "--text-light": userTheme[currentTheme].textLight,
         "--nav-hover": userTheme[currentTheme].navHover,
         "--highlight-bcg": userTheme[currentTheme].highlightBcg,
+        "--codeBcg": userTheme[currentTheme].codeBcg,
       }}
     >
       <Sidebar currentComp={currentComp} setCurrentComp={setCurrentComp} />

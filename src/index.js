@@ -5,7 +5,7 @@ import { ThemeProvider } from "./components/theme-context";
 
 const userTheme = {
   light: {
-    bg: "#FFFFFF",
+    bg: "#f5f5f5",
     text: "rgba(107, 114, 128)",
     textLight: "#a6a7b3",
     toggleColor: "#f39c12",
@@ -14,8 +14,9 @@ const userTheme = {
     // text: "rgba(156, 163, 175)"
     oppositeColor: "#000",
     border: "1px solid rgba(209, 213, 219)",
-    navHover: "#F3F6FF",
-    highlightBcg: "#CCD3E7",
+    navHover: "#e3e7f1",
+    highlightBcg: "#edf2fd",
+    codeBcg: "#222328", //change
   },
   dark: {
     bg: "#040406",
@@ -25,8 +26,9 @@ const userTheme = {
     // 400 gray
     oppositeColor: "#fff",
     border: "1px solid rgba(31, 41, 55)",
-    navHover: "#131314", //change for dark
-    highlightBcg: "#26272b", // also change
+    navHover: "#131314",
+    highlightBcg: "#26272b",
+    codeBcg: "#222328",
   },
 };
 

@@ -25,10 +25,7 @@ export default function Component({ comp }) {
 
   return (
     <div className="main-content" ref={mainContentRef}>
-      <div
-        className="component-wrapper"
-        // style={{ "--highlight-bcg": userTheme[currentTheme].highlightBcg }}
-      >
+      <div className="component-wrapper">
         <div className="component-info-wrapper">
           <div
             className="component-title"
@@ -62,6 +59,24 @@ export default function Component({ comp }) {
             <div className="component-variant-example">
               <div className="component-variant-example__output">
                 {variant.code}
+                <button className="copy-btn btn btn--icon-rounded btn--rounded">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon-sm"
+                    width="44"
+                    height="44"
+                    stroke="#cce3ec"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <rect x="8" y="8" width="12" height="12" rx="2" />
+                    <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+                  </svg>
+                </button>
               </div>
               <pre className="component-variant-example__code">
                 <code className="language-html">
@@ -72,12 +87,6 @@ export default function Component({ comp }) {
             </div>
           </div>
         ))}
-        {/* <pre className="code-output">
-        <code className="language-html">{content}</code>
-      </pre> */}
-        {/* <pre>
-        <code className="language-html">`console.log("test")`</code>
-      </pre> */}
       </div>
       <RightSidebar navVariants={navVariants} />
     </div>

@@ -6,6 +6,7 @@
 }
 
 .component-wrapper {
+  /* background-color: #f9f9f9; */
   flex-grow: 1;
   padding: 2.5rem 0;
   padding-right: 2.5rem;
@@ -48,9 +49,9 @@
 
 .highlight {
   display: inline-flex;
-  /* background-color: var(--highlight-bcg); */
+  background-color: var(--highlight-bcg);
   /* background-color: #e5ebf8; */
-  background-color: #edf2fd;
+  /* background-color: #edf2fd; */
   border: 1px solid rgba(128, 128, 128, 0.2);
   font-size: 1.1rem;
   padding: 0 0.5rem;
@@ -86,13 +87,23 @@
   margin: 0 auto;
   padding: 2rem;
   border: 1px solid rgba(128, 128, 128, 0.2);
+  position: relative;
 }
 pre[class*="language-"] {
   margin: 0;
   border-radius: 0 0 0.4rem 0.4rem;
   padding-bottom: 2.5rem;
+  background-color: var(--codeBcg);
+  /* background-color: #2d3b4d; */
 }
 
 .comp__eg > * {
   margin: 1rem;
+}
+
+.copy-btn {
+  position: absolute;
+  bottom: -3.75rem;
+  right: 1rem;
+  /* color: #cce3ec; */
 }
