@@ -1,14 +1,9 @@
-/* 
-    sm -> 24
-    md -> 36 - normal
-    lg -> 48
-    xl -> 72
-    2xl -> 98
-*/
 .avatar {
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
+  /* width: 36px;
+  height: 36px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,29 +24,30 @@
 }
 .avatar--rounded {
   border-radius: 0.5rem;
-  /* border-radius: 8px; */
 }
 .avatar--rounded > * {
   border-radius: 0.25rem;
 }
 
 .avatar--sm {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
+  /* width: 24px;
+  height: 24px; */
 }
 .avatar--md {
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 .avatar--lg {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
 }
 .avatar--xl {
-  width: 72px;
-  height: 72px;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 .avatar--2xl {
-  width: 98px;
-  height: 98px;
+  width: 6.125rem;
+  height: 6.125rem;
 }

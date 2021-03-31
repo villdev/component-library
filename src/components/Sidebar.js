@@ -1,7 +1,7 @@
 import React from "react";
 import { componentData } from "./componentData";
 
-import "../css/sidebar.css";
+// import "../css/sidebar.css";
 
 export default function Sidebar({ currentComp, setCurrentComp }) {
   const navItems = Object.keys(componentData);
@@ -9,13 +9,7 @@ export default function Sidebar({ currentComp, setCurrentComp }) {
     setCurrentComp(comp);
   };
   return (
-    <div
-      className="sidebar"
-      // style={{
-      //   "--nav-hover": userTheme[currentTheme].navHover,
-      //   "--text-light": userTheme[currentTheme].textLight,
-      // }}
-    >
+    <div className="sidebar">
       <div className="sidebar-header">COMPONENTS</div>
       <nav className="sidebar-nav">
         <ul>

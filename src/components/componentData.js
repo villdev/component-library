@@ -1,8 +1,6 @@
 import React from "react";
 import avatarImg from "../images/avatar.jpeg";
-// import avatarImg for avatars
 import reptileImg from "../images/contemplative-reptile.jpg";
-//import foodsampleimg and reptile img for cards
 import foodSampleImg from "../images/paella.jpg";
 
 export const componentData = {

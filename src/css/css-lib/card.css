@@ -1,5 +1,5 @@
 .card {
-  border-radius: 4px;
+  border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -12,25 +12,11 @@
   border-radius: 0;
 }
 .card__content {
-  /* padding: 0.5em; */
   padding: 1em;
-  /* margin: 0.5em; */
 }
-/* .card__content > * {
-  padding: 0.5em;
-} */
 .card__header {
   display: flex;
-  /* align-items: center; */
-  /* margin-bottom: 0.6em; */
-  /* padding: 0.5em; */
   padding: 1em;
-}
-/* .card__header > * {
-  margin: 0.5em;
-} */
-.card__title {
-  /* padding: 0.5rem; */
 }
 .card__media {
   overflow: hidden;
@@ -41,9 +27,6 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
 }
 .card__media > .card__overlay {
   position: absolute;
@@ -55,7 +38,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  /* flex-direction: column; */
 }
 .card > .card__overlay {
   position: absolute;
@@ -69,7 +51,6 @@
   display: flex;
 }
 .card__actions {
-  /* padding: 0.5em; */
   align-self: flex-start;
   display: flex;
 }
@@ -82,13 +63,9 @@
   flex-direction: row;
 }
 .card--horizontal > .card__media > * {
-  /* height: 100%; */
-  /* width: 100%; */
-  /* object-fit: contain; */
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* object-position: 0 0; */
 }
 .card__content > .card__header,
 .card__content > .card__footer {

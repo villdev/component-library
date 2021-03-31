@@ -1,26 +1,23 @@
 import React from "react";
-import "../css/header.css";
+// import "../css/header.css";
 import { useTheme } from "./theme-context";
 import logoIcon from "../images/logo.svg";
 
 export default function Header() {
   const { currentTheme, userTheme, toggleTheme } = useTheme();
-  //   const toggleIconColor = currentTheme === "light" ? "#f39c12" : "#c1c2c9";
+  const theme = userTheme[currentTheme];
   const headerStyle = {
-    backgroundColor: userTheme[currentTheme].bg,
-    color: userTheme[currentTheme].text,
-    "--text-color:": userTheme[currentTheme].text,
-    "--bg": userTheme[currentTheme].toggleColor,
-    borderBottom: userTheme[currentTheme].border,
+    backgroundColor: theme.bg,
+    color: theme.text,
+    "--text-color:": theme.text,
+    "--bg": theme.toggleColor,
+    borderBottom: theme.border,
   };
   return (
     <header className="flex items-center" style={headerStyle}>
       <div className="logo flex items-center">
         <img className="logo__icon icon-md" src={logoIcon} alt="" />
-        <div
-          className="logo__text"
-          style={{ color: userTheme[currentTheme].oppositeColor }}
-        >
+        <div className="logo__text" style={{ color: theme.oppositeColor }}>
           PARS.css
         </div>
       </div>
@@ -41,16 +38,10 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        {/* <input
-          className="search-bar ml-auto"
-          type="search"
-          name="component-search"
-          placeholder="Search documentation"
-        /> */}
         <div className="input-text container-xs input-text--light search-bar-wrapper ml-auto">
           <input
             className="search-bar"
-            style={{ color: userTheme[currentTheme].text }}
+            style={{ color: theme.text }}
             type="search"
             name="search-phrase"
             id="search-bar"
@@ -73,9 +64,10 @@ export default function Header() {
             href="https://github.com/villdev/pars"
             target="_blank"
             rel="noreferrer"
+            aria-label="github-source-button"
           >
             <svg
-              style={{ stroke: userTheme[currentTheme].oppositeColor }}
+              style={{ stroke: theme.oppositeColor }}
               className="icon-sm"
               xmlns="http://www.w3.org/2000/svg"
               width="44"

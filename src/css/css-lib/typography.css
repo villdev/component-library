@@ -1,43 +1,43 @@
 .text-h1 {
-  font-size: 96px;
+  font-size: 6rem;
   font-weight: 300;
   letter-spacing: -1.5px;
-  line-height: 120px;
+  line-height: 7.5rem;
 }
 
 .text-h2 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
   letter-spacing: -0.5px;
-  line-height: 80px;
+  line-height: 5rem;
 }
 
 .text-h3 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 64px;
+  line-height: 4rem;
 }
 
 .text-h4 {
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: 400;
   letter-spacing: 0.25px;
-  line-height: 48px;
+  line-height: 3rem;
 }
 
 .text-h5 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 .text-h6 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.15px;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 .text-headline1 {
   font-size: 8.5rem;
@@ -65,54 +65,54 @@
 }
 
 .text-subtitle1 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.15px;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .text-subtitle2 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.1px;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .text-body1 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.5px;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .text-body2 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.25px;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .text-button {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 1.25px;
   text-transform: uppercase;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .text-caption {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.4px;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .text-overline {
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 400;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  line-height: 16px;
+  line-height: 1rem;
 }
 
 /* font weights*/

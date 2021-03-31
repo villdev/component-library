@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../css/rightSidebar.css";
+// import "../css/rightSidebar.css";
 
 export default function RightSidebar({ navVariants, introPresent }) {
   return (
@@ -16,7 +16,7 @@ export default function RightSidebar({ navVariants, introPresent }) {
           {navVariants.map((nav, i) => {
             return (
               <li key={i} className="right-sidebar-nav__item">
-                <a href={`#${nav.replace(" ", "")}`}>{nav}</a>
+                <a href={`#${nav.replace(" ", "-")}`}>{nav}</a>
               </li>
             );
           })}

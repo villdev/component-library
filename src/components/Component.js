@@ -4,17 +4,17 @@ import Prism from "prismjs";
 import reactElementToJSXString from "react-element-to-jsx-string";
 import RightSidebar from "./RightSidebar";
 
-import "../css/prism.css";
-import "../css/component.css";
+// import "../css/prism.css";
+// import "../css/component.css";
 
 export default function Component({ comp }) {
   const { currentTheme, userTheme } = useTheme();
+  const theme = userTheme[currentTheme];
   const currentVariants =
     currentTheme === "light" ? comp.lightVariants : comp.darkVariants;
   const navVariants = currentVariants.map(({ name }) => name);
   const handleCopy = (reactCode) => {
     navigator.clipboard.writeText(
-      // reactElementToJSXString(reactCode).slice(26, -6).trim()
       reactElementToJSXString(reactCode).slice(26, -6)
     );
   };
@@ -25,7 +25,6 @@ export default function Component({ comp }) {
 
   useEffect(() => {
     Prism.highlightAll();
-    //scroll to top
     mainContentRef.current.scrollTo(0, 0);
   }, [comp]);
 
@@ -35,7 +34,7 @@ export default function Component({ comp }) {
         <div className="component-info-wrapper">
           <div
             className="component-title"
-            style={{ color: userTheme[currentTheme].oppositeColor }}
+            style={{ color: theme.oppositeColor }}
           >
             {comp.title}
           </div>
@@ -45,10 +44,13 @@ export default function Component({ comp }) {
           <div className="component-intro-wrapper">
             <div
               id="intro"
-              className="component-intro-header"
-              style={{ color: userTheme[currentTheme].oppositeColor }}
+              className="component-intro-header direct-link-wrapper"
+              style={{ color: theme.oppositeColor }}
             >
               Introduction
+              <span className="direct-link">
+                <a href="#intro">#</a>
+              </span>
             </div>
             <div className="component-intro">{comp.intro}</div>
           </div>
@@ -57,11 +59,14 @@ export default function Component({ comp }) {
         {currentVariants.map((variant, i) => (
           <div className="component-variant-wrapper" key={i}>
             <div
-              id={variant.name.replace(" ", "")}
-              className="component-variant-header"
-              style={{ color: userTheme[currentTheme].oppositeColor }}
+              id={variant.name.replace(" ", "-")}
+              className="component-variant-header direct-link-wrapper"
+              style={{ color: theme.oppositeColor }}
             >
               {variant.name}
+              <span className="direct-link">
+                <a href={`#${variant.name.replace(" ", "-")}`}>#</a>
+              </span>
             </div>
             <div className="component-variant-desc">{variant.desc}</div>
             <div className="component-variant-example">
@@ -70,6 +75,7 @@ export default function Component({ comp }) {
                 <button
                   onClick={() => handleCopy(variant.code)}
                   className="copy-btn btn btn--icon-rounded btn--rounded"
+                  aria-label="copy-code-button"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +97,6 @@ export default function Component({ comp }) {
               </div>
               <pre className="component-variant-example__code">
                 <code className="language-html">
-                  {/* {reactElementToJSXString(variant.code)} */}
                   {reactElementToJSXString(variant.code).slice(26, -6)}
                 </code>
               </pre>
