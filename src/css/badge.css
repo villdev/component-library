@@ -47,7 +47,7 @@
   width: 16px;
   min-width: 16px;
   height: 16px;
-  border: 3px outset var(--black-color1);
+  border: 3px solid var(--black-color1);
   border-radius: 50%;
   position: absolute;
   top: 0;

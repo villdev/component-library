@@ -15,7 +15,7 @@ export default function Header() {
   };
   return (
     <header className="flex items-center" style={headerStyle}>
-      <div className="logo flex items-center justify-center">
+      <div className="logo flex items-center">
         <img className="logo__icon icon-md" src={logoIcon} alt="" />
         <div
           className="logo__text"
@@ -47,7 +47,7 @@ export default function Header() {
           name="component-search"
           placeholder="Search documentation"
         /> */}
-        <div className="input-text container-xs input-text--light ml-auto">
+        <div className="input-text container-xs input-text--light search-bar-wrapper ml-auto">
           <input
             className="search-bar"
             style={{ color: userTheme[currentTheme].text }}

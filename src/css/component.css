@@ -1,0 +1,98 @@
+.main-content {
+  overflow: auto;
+  display: flex;
+  width: calc(100% - var(--sidebar-width));
+  position: relative;
+}
+
+.component-wrapper {
+  flex-grow: 1;
+  padding: 2.5rem 0;
+  padding-right: 2.5rem;
+  max-width: calc(100% - var(--sidebar-width));
+}
+
+.component-title {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.component-desc {
+  height: 3rem;
+}
+.component-desc {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.component-info-wrapper {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.component-intro-header {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.component-intro-wrapper {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.component-intro {
+  /* height: 3rem; */
+  min-height: 3rem;
+}
+
+.highlight {
+  display: inline-flex;
+  /* background-color: var(--highlight-bcg); */
+  /* background-color: #e5ebf8; */
+  background-color: #edf2fd;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  border-radius: 0.2rem;
+  color: var(--primary-color);
+  margin: 0.2rem 0.2rem;
+}
+
+/* variants */
+.component-variant-wrapper {
+  padding-bottom: 3.25rem;
+  /* margin-bottom: 3rem; */
+  margin-bottom: 3.25rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.component-variant-header {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.component-variant-desc {
+  /* height: 3rem; */
+  min-height: 3rem;
+  margin-bottom: 2.5rem;
+}
+.component-variant-example {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 0.4rem;
+}
+.component-variant-example__output {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+pre[class*="language-"] {
+  margin: 0;
+  border-radius: 0 0 0.4rem 0.4rem;
+  padding-bottom: 2.5rem;
+}
+
+.comp__eg > * {
+  margin: 1rem;
+}
