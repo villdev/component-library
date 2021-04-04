@@ -1,30 +1,22 @@
 import React from "react";
 import { componentData } from "./componentData";
+import { NavLink } from "react-router-dom";
 
-// import "../css/sidebar.css";
-
-export default function Sidebar({ currentComp, setCurrentComp }) {
+export default function Sidebar() {
   const navItems = Object.keys(componentData);
-  const changeComponent = (comp) => {
-    setCurrentComp(comp);
-  };
   return (
     <div className="sidebar">
       <div className="sidebar-header">COMPONENTS</div>
       <nav className="sidebar-nav">
         <ul>
           {navItems.map((item, i) => (
-            <li
+            <NavLink
               key={i}
-              onClick={() => changeComponent(item)}
-              className={
-                currentComp === item
-                  ? "sidebar-nav__item active-sidebar-nav"
-                  : "sidebar-nav__item"
-              }
+              to={`/${item.toLowerCase()}`}
+              activeClassName="active-sidebar-nav"
             >
-              {item}
-            </li>
+              <li className="sidebar-nav__item"> {item} </li>
+            </NavLink>
           ))}
         </ul>
       </nav>

@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Sidebar from "./Sidebar";
 import Component from "./Component";
 import { useTheme } from "./theme-context";
 import { componentData } from "./componentData";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 export default function ComponentsRoute() {
   const { currentTheme, userTheme } = useTheme();
   const theme = userTheme[currentTheme];
-  const [currentComp, setCurrentComp] = useState("Avatar");
+  const navItems = Object.keys(componentData);
   return (
     <div
       className="main-content-wrapper"
@@ -21,8 +22,17 @@ export default function ComponentsRoute() {
         "--codeBcg": theme.codeBcg,
       }}
     >
-      <Sidebar currentComp={currentComp} setCurrentComp={setCurrentComp} />
-      <Component comp={componentData[currentComp]} />
+      <Sidebar />
+      <Routes>
+        <Navigate to="/avatar" />
+        {navItems.map((item, i) => (
+          <Route
+            key={i}
+            path={`/${item.toLowerCase()}`}
+            element={<Component comp={componentData[item]} />}
+          />
+        ))}
+      </Routes>
     </div>
   );
 }
