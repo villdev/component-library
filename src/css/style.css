@@ -388,9 +388,11 @@ pre[class*="language-"] {
   padding: 0.1rem 0.75rem;
   border-radius: 0.2rem;
   cursor: pointer;
-
   margin-left: auto;
   margin-right: auto;
+}
+.right-sidebar-nav__item > .right-sidebar-nav__item--active {
+  color: var(--primary-color);
 }
 .right-sidebar-nav__item a {
   text-decoration: none;
