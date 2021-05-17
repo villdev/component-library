@@ -83,7 +83,7 @@ export default function Component({ comp }) {
     });
 
     return () => {
-      variantRefs.forEach((variant) => {
+      variantRefs.current.forEach((variant) => {
         observer.unobserve(variant);
       });
     };
