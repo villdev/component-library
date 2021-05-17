@@ -139,7 +139,7 @@ export default function Component({ comp }) {
                 {variant.code}
                 <button
                   onClick={() => handleCopy(variant.code)}
-                  className="copy-btn btn btn--icon-rounded btn--rounded"
+                  className="btn btn--icon-rounded btn--rounded btn-copy"
                   aria-label="copy-code-button"
                 >
                   <svg
